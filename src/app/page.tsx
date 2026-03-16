@@ -1,4 +1,3 @@
-import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { BeliefBreaker } from "@/components/BeliefBreaker";
 import { Opportunity } from "@/components/Opportunity";
@@ -18,7 +17,6 @@ import { StickyCTA } from "@/components/StickyCTA";
 export default function Home() {
   return (
     <main className="min-h-screen relative">
-      <Navbar />
       <Hero />
       <BeliefBreaker />
       <Opportunity />
