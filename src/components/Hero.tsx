@@ -44,7 +44,7 @@ export function Hero() {
 
             <div className="space-y-4 pt-4">
               <Button size="lg" className="h-16 px-10 text-xl font-bold bg-primary hover:bg-primary/90 w-full sm:w-auto cta-button-glow uppercase" asChild>
-                <a href="#comprar">
+                <a href="https://pay.kirvano.com/db5931e7-179f-4147-b201-a554ac4c0aeb">
                   Quero começar a vender no Marketplace <ArrowRight className="ml-2 w-6 h-6" />
                 </a>
               </Button>

@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState, useEffect } from "react";
@@ -31,7 +32,7 @@ export function StickyCTA() {
         className="w-full h-14 bg-primary hover:bg-primary/90 font-extrabold uppercase cta-button-glow shadow-2xl rounded-xl"
         asChild
       >
-        <a href="#comprar">
+        <a href="https://pay.kirvano.com/db5931e7-179f-4147-b201-a554ac4c0aeb">
           <ShoppingCart className="mr-2 w-5 h-5" /> Quero começar agora <ArrowRight className="ml-2 w-5 h-5" />
         </a>
       </Button>

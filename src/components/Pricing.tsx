@@ -1,3 +1,4 @@
+
 "use client";
 
 import { Button } from "@/components/ui/button";
@@ -63,8 +64,10 @@ export function Pricing() {
                   <p className="text-sm text-accent font-extrabold tracking-widest uppercase animate-bounce pt-2">Acesso imediato após a compra</p>
                 </div>
 
-                <Button size="lg" className="h-16 px-12 text-xl w-full bg-primary hover:bg-primary/90 shadow-lg shadow-primary/20 transition-all hover:scale-105 font-extrabold uppercase cta-button-glow">
-                  Quero começar agora
+                <Button size="lg" className="h-16 px-12 text-xl w-full bg-primary hover:bg-primary/90 shadow-lg shadow-primary/20 transition-all hover:scale-105 font-extrabold uppercase cta-button-glow" asChild>
+                  <a href="https://pay.kirvano.com/db5931e7-179f-4147-b201-a554ac4c0aeb">
+                    Quero começar agora
+                  </a>
                 </Button>
 
                 <div className="flex items-center gap-4 text-[10px] text-muted-foreground uppercase font-bold tracking-widest">

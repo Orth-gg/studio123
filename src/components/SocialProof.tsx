@@ -1,3 +1,4 @@
+
 "use client";
 
 import Image from "next/image";
@@ -7,7 +8,6 @@ import { Star, Camera, CheckCircle2 } from "lucide-react";
 export function SocialProof() {
   const images = PlaceHolderImages || [];
   
-  // Filtrando especificamente os 3 prints reais de alunos definidos no JSON
   const resultPrints = [
     images.find(img => img.id === "student-result-1"),
     images.find(img => img.id === "student-result-2"),
@@ -32,7 +32,6 @@ export function SocialProof() {
           </div>
         </div>
 
-        {/* Galeria de Prints Reais dos Alunos */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-5xl mx-auto px-4 sm:px-0">
           {resultPrints.map((print, idx) => (
             <div key={idx} className="relative group">

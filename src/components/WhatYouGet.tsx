@@ -1,6 +1,7 @@
+
 "use client";
 
-import { BookOpen, FolderOpen, MousePointer2, TrendingUp, Users, PieChart, Check } from "lucide-react";
+import { BookOpen, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const modules = [
@@ -40,7 +41,7 @@ export function WhatYouGet() {
 
         <div className="text-center">
           <Button size="lg" className="h-16 px-12 text-xl font-bold bg-primary hover:bg-primary/90 cta-button-glow uppercase" asChild>
-            <a href="#comprar">Quero acessar o conteúdo completo</a>
+            <a href="https://pay.kirvano.com/db5931e7-179f-4147-b201-a554ac4c0aeb">Quero acessar o conteúdo completo</a>
           </Button>
           <p className="mt-4 text-xs text-muted-foreground font-bold uppercase tracking-widest flex items-center justify-center gap-2">
             <Check className="w-4 h-4 text-primary" /> Início Imediato após o pagamento

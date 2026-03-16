@@ -1,6 +1,7 @@
+
 "use client";
 
-import { CheckCircle2, TrendingUp, Users, DollarSign, MapPin, Package } from "lucide-react";
+import { TrendingUp, Users, DollarSign, MapPin, Package } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const benefits = [
@@ -47,7 +48,7 @@ export function Opportunity() {
               A cada minuto que passa, centenas de vendas são fechadas na sua cidade. Você está sendo o vendedor ou apenas um espectador?
             </p>
             <Button size="lg" className="w-full h-16 text-lg font-bold bg-primary hover:bg-primary/90 cta-button-glow uppercase" asChild>
-              <a href="#comprar">Quero começar a lucrar agora</a>
+              <a href="https://pay.kirvano.com/db5931e7-179f-4147-b201-a554ac4c0aeb">Quero começar a lucrar agora</a>
             </Button>
             <p className="text-center text-xs text-muted-foreground uppercase tracking-widest font-bold">Acesso imediato e vitalício</p>
           </div>

@@ -1,3 +1,4 @@
+
 "use client";
 
 import { Button } from "@/components/ui/button";
@@ -16,7 +17,7 @@ export function FinalCTA() {
         </p>
         <div className="max-w-xl mx-auto pt-4">
           <Button size="lg" className="h-20 px-12 text-2xl font-extrabold w-full bg-primary hover:bg-primary/90 cta-button-glow uppercase transition-all hover:scale-105" asChild>
-            <a href="#comprar">
+            <a href="https://pay.kirvano.com/db5931e7-179f-4147-b201-a554ac4c0aeb">
               Quero acessar o Renda Express <ArrowRight className="ml-2 w-8 h-8" />
             </a>
           </Button>
