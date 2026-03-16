@@ -1,17 +1,15 @@
-
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { Check, Sparkles } from "lucide-react";
+import { Check, Sparkles, ShieldCheck, Zap } from "lucide-react";
 
 const benefits = [
-  "Acesso ao Guia Mestre Marketplace",
-  "Acesso à Plataforma de Gestão (1 ano)",
-  "Calculadora de Lucro Automática",
-  "Estratégias de Escala e Bloqueios",
-  "Modelos de Anúncios que Convertem",
-  "Suporte Exclusivo via WhatsApp",
-  "Bônus: Fornecedores de Confiança"
+  "Acesso completo ao curso",
+  "Todas as ferramentas incluídas",
+  "Atualizações futuras",
+  "Acesso imediato e vitalício",
+  "Suporte exclusivo na área de membros",
+  "Bônus: Scripts de Negociação"
 ];
 
 export function Pricing() {
@@ -21,14 +19,14 @@ export function Pricing() {
       
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-          <h2 className="text-4xl md:text-5xl font-headline font-bold">Sua Jornada Começa Agora</h2>
-          <p className="text-muted-foreground text-lg">
-            Investimento único com retorno garantido se você aplicar o método.
+          <h2 className="text-4xl md:text-5xl font-headline font-bold uppercase">Hoje você pode começar por um valor simbólico</h2>
+          <p className="text-muted-foreground text-lg uppercase font-bold tracking-tighter">
+            O investimento que se paga com sua primeira venda.
           </p>
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <div className="glass-card rounded-3xl overflow-hidden border-primary/30 relative shadow-[0_0_50px_rgba(71,99,235,0.2)]">
+          <div className="glass-card rounded-[2.5rem] overflow-hidden border-primary/40 relative shadow-[0_0_60px_rgba(34,197,94,0.15)]">
             <div className="absolute top-0 right-0 p-8">
               <Sparkles className="w-12 h-12 text-accent animate-pulse" />
             </div>
@@ -36,8 +34,8 @@ export function Pricing() {
             <div className="grid lg:grid-cols-2">
               <div className="p-8 lg:p-12 space-y-8 bg-white/[0.02]">
                 <div>
-                  <h3 className="text-2xl font-headline font-bold mb-2">Acesso Premium</h3>
-                  <p className="text-muted-foreground">Tudo que você precisa para dominar o marketplace.</p>
+                  <h3 className="text-2xl font-headline font-extrabold mb-2 uppercase">Acesso Premium</h3>
+                  <p className="text-muted-foreground text-sm uppercase font-bold">Tudo que você precisa para dominar o marketplace.</p>
                 </div>
 
                 <ul className="space-y-4">
@@ -46,30 +44,33 @@ export function Pricing() {
                       <div className="mt-1 w-5 h-5 rounded-full bg-primary/20 flex items-center justify-center shrink-0">
                         <Check className="w-3 h-3 text-primary" />
                       </div>
-                      <span className="text-sm font-medium">{benefit}</span>
+                      <span className="text-sm font-bold uppercase tracking-tight">{benefit}</span>
                     </li>
                   ))}
                 </ul>
               </div>
 
-              <div className="p-8 lg:p-12 flex flex-col justify-center items-center text-center space-y-8 border-t lg:border-t-0 lg:border-l border-white/10">
+              <div className="p-8 lg:p-12 flex flex-col justify-center items-center text-center space-y-8 border-t lg:border-t-0 lg:border-l border-white/10 bg-primary/5">
                 <div className="space-y-2">
-                  <p className="text-muted-foreground line-through text-lg">De R$ 497,00</p>
+                  <p className="text-muted-foreground line-through text-lg font-bold">De R$ 197,00</p>
                   <div className="flex items-baseline justify-center gap-2">
-                    <span className="text-xl font-medium">Por apenas</span>
-                    <span className="text-5xl md:text-6xl font-headline font-bold text-accent">R$ 197</span>
+                    <span className="text-xl font-medium uppercase">Por apenas</span>
+                    <div className="flex items-baseline">
+                      <span className="text-2xl font-bold mr-1">R$</span>
+                      <span className="text-6xl md:text-7xl font-headline font-extrabold text-primary">47</span>
+                    </div>
                   </div>
-                  <p className="text-sm text-primary font-bold tracking-widest uppercase">Ou 12x de R$ 19,70</p>
+                  <p className="text-sm text-accent font-extrabold tracking-widest uppercase animate-bounce pt-2">Acesso imediato após a compra</p>
                 </div>
 
-                <Button size="lg" className="h-16 px-12 text-xl w-full bg-primary hover:bg-primary/90 shadow-lg shadow-primary/20 transition-all hover:scale-105">
-                  Garantir Minha Vaga
+                <Button size="lg" className="h-16 px-12 text-xl w-full bg-primary hover:bg-primary/90 shadow-lg shadow-primary/20 transition-all hover:scale-105 font-extrabold uppercase cta-button-glow">
+                  Quero começar agora
                 </Button>
 
-                <p className="text-xs text-muted-foreground flex items-center gap-2">
-                  <span className="inline-block w-2 h-2 rounded-full bg-green-500" /> 
-                  Garantia incondicional de 7 dias
-                </p>
+                <div className="flex items-center gap-4 text-[10px] text-muted-foreground uppercase font-bold tracking-widest">
+                  <span className="flex items-center gap-1.5"><ShieldCheck className="w-4 h-4 text-green-500" /> Compra Segura</span>
+                  <span className="flex items-center gap-1.5"><Zap className="w-4 h-4 text-yellow-500" /> Vagas Limitadas</span>
+                </div>
               </div>
             </div>
           </div>
