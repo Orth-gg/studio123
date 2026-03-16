@@ -33,27 +33,21 @@
     },
     {
       "id": "student-result-1",
-      "description": "Screenshot of several sales notifications on a mobile phone.",
+      "description": "Print de resultado de aluno 1 - Notificação de venda",
       "imageUrl": "https://picsum.photos/seed/venda1/400/800",
       "imageHint": "mobile notification"
     },
     {
       "id": "student-result-2",
-      "description": "Screenshot of a Facebook Marketplace chat full of interested buyers.",
+      "description": "Print de resultado de aluno 2 - Chat de interessados",
       "imageUrl": "https://picsum.photos/seed/chat1/400/800",
       "imageHint": "chat list"
     },
     {
       "id": "student-result-3",
-      "description": "Screenshot of a bank app showing a positive balance from sales.",
+      "description": "Print de resultado de aluno 3 - Saldo bancário de vendas",
       "imageUrl": "https://picsum.photos/seed/banco1/400/800",
       "imageHint": "bank statement"
-    },
-    {
-      "id": "student-result-4",
-      "description": "Another sales notification screenshot from a different student.",
-      "imageUrl": "https://picsum.photos/seed/venda2/400/800",
-      "imageHint": "sales results"
     }
   ]
 }

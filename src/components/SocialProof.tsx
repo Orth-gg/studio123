@@ -27,7 +27,7 @@ const testimonials = [
 ];
 
 export function SocialProof() {
-  // Selecionando exatamente 3 prints de resultados
+  // Selecionando exatamente os 3 prints de resultados definidos no JSON
   const resultPrints = [
     PlaceHolderImages.find(img => img.id === "student-result-1"),
     PlaceHolderImages.find(img => img.id === "student-result-2"),
@@ -39,20 +39,20 @@ export function SocialProof() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 space-y-4">
           <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-4">
-            <Camera className="w-4 h-4" /> Prova Social Real
+            <Camera className="w-4 h-4" /> Prova Real de Alunos
           </div>
           <h2 className="text-3xl md:text-5xl font-headline font-bold uppercase">
-            Pessoas comuns já estão <span className="text-primary">faturando</span> todos os dias
+            Veja os resultados de quem <span className="text-primary">aplicou o método</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto font-medium">
-            Veja abaixo os prints reais de resultados de alunos que aplicaram o método Renda Express e já estão colhendo os lucros.
+            Estes são prints reais enviados por nossos alunos. Pessoas comuns que decidiram sair da teoria e partir para a prática.
           </p>
           <div className="flex justify-center gap-1 text-accent pt-2">
             {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 fill-current" />)}
           </div>
         </div>
 
-        {/* Galeria de Prints de Alunos - Otimizada para 3 itens */}
+        {/* Galeria de Prints de Alunos - Exatamente 3 itens em destaque */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-5xl mx-auto mb-24 px-4 sm:px-0">
           {resultPrints.map((print, idx) => (
             <div key={idx} className="relative group">
@@ -70,7 +70,7 @@ export function SocialProof() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
                 <div className="absolute bottom-6 left-0 right-0 text-center">
                   <div className="inline-flex items-center gap-1 bg-primary text-white text-[10px] font-bold py-1.5 px-5 rounded-full uppercase tracking-tighter shadow-lg">
-                    <CheckCircle2 className="w-3.5 h-3.5" /> Resultado Real
+                    <CheckCircle2 className="w-3.5 h-3.5" /> Resultado Comprovado
                   </div>
                 </div>
               </div>
