@@ -28,6 +28,8 @@ const testimonials = [
 
 export function SocialProof() {
   const images = PlaceHolderImages || [];
+  
+  // Filtrando especificamente os 3 prints reais de alunos definidos no JSON
   const resultPrints = [
     images.find(img => img.id === "student-result-1"),
     images.find(img => img.id === "student-result-2"),
@@ -52,6 +54,7 @@ export function SocialProof() {
           </div>
         </div>
 
+        {/* Galeria de Prints Reais dos Alunos */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-5xl mx-auto mb-24 px-4 sm:px-0">
           {resultPrints.map((print, idx) => (
             <div key={idx} className="relative group">
@@ -64,6 +67,7 @@ export function SocialProof() {
                     fill
                     className="object-cover"
                     data-ai-hint={print.imageHint}
+                    unoptimized={true} // Força o carregamento de links externos que não são diretos
                   />
                 )}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
@@ -77,6 +81,7 @@ export function SocialProof() {
           ))}
         </div>
         
+        {/* Depoimentos Adicionais em Texto */}
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((review, idx) => {
             const userImg = images.find(img => img.id === review.img);
