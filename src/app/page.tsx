@@ -1,3 +1,4 @@
+
 import { Hero } from "@/components/Hero";
 import { BeliefBreaker } from "@/components/BeliefBreaker";
 import { Opportunity } from "@/components/Opportunity";
