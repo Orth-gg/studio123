@@ -27,11 +27,11 @@ const testimonials = [
 ];
 
 export function SocialProof() {
-  // Selecionando exatamente os 3 prints de resultados definidos no JSON
+  const images = PlaceHolderImages || [];
   const resultPrints = [
-    PlaceHolderImages.find(img => img.id === "student-result-1"),
-    PlaceHolderImages.find(img => img.id === "student-result-2"),
-    PlaceHolderImages.find(img => img.id === "student-result-3"),
+    images.find(img => img.id === "student-result-1"),
+    images.find(img => img.id === "student-result-2"),
+    images.find(img => img.id === "student-result-3"),
   ].filter(Boolean);
 
   return (
@@ -52,7 +52,6 @@ export function SocialProof() {
           </div>
         </div>
 
-        {/* Galeria de Prints de Alunos - Exatamente 3 itens em destaque */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-5xl mx-auto mb-24 px-4 sm:px-0">
           {resultPrints.map((print, idx) => (
             <div key={idx} className="relative group">
@@ -78,10 +77,9 @@ export function SocialProof() {
           ))}
         </div>
         
-        {/* Depoimentos em Texto */}
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((review, idx) => {
-            const userImg = PlaceHolderImages.find(img => img.id === review.img);
+            const userImg = images.find(img => img.id === review.img);
             return (
               <div key={idx} className="glass-card p-8 rounded-3xl relative flex flex-col group hover:border-primary/40 transition-all">
                 <Quote className="absolute top-6 right-8 w-12 h-12 text-primary/10 group-hover:text-primary/20 transition-colors" />

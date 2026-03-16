@@ -1,3 +1,4 @@
+
 "use client";
 
 import Image from "next/image";
@@ -7,7 +8,7 @@ import { PlaceHolderImages } from "@/app/lib/placeholder-images";
 import { ArrowRight, ShieldCheck, Zap, TrendingUp } from "lucide-react";
 
 export function Hero() {
-  const heroImage = PlaceHolderImages.find((img) => img.id === "hero-dashboard");
+  const heroImage = (PlaceHolderImages || []).find((img) => img.id === "hero-dashboard");
 
   return (
     <section className="pt-32 pb-20 overflow-hidden money-gradient">
@@ -21,9 +22,9 @@ export function Hero() {
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-headline font-extrabold leading-[1.1] uppercase">
                 Como pessoas comuns estão gerando <span className="gradient-text">renda todos os dias</span> usando o Facebook Marketplace
               </h1>
-              <p className="text-xl text-muted-foreground max-w-2xl mx-auto lg:mx-0">
+              <h2 className="text-xl text-muted-foreground max-w-2xl mx-auto lg:mx-0">
                 Aprenda o método simples que permite transformar o Marketplace em uma máquina de renda extra — mesmo começando do zero e sem precisar investir em estoque.
-              </p>
+              </h2>
             </div>
 
             <div className="grid sm:grid-cols-2 gap-4 max-w-xl mx-auto lg:mx-0">
