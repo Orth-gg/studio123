@@ -33,21 +33,21 @@
     },
     {
       "id": "student-result-1",
-      "description": "Print de resultado de aluno 1 - Notificação de venda",
-      "imageUrl": "https://picsum.photos/seed/venda1/400/800",
-      "imageHint": "mobile notification"
+      "description": "Print de resultado de aluno 1",
+      "imageUrl": "https://ibb.co/VpV1dzR8",
+      "imageHint": "mobile screenshot"
     },
     {
       "id": "student-result-2",
-      "description": "Print de resultado de aluno 2 - Chat de interessados",
-      "imageUrl": "https://picsum.photos/seed/chat1/400/800",
-      "imageHint": "chat list"
+      "description": "Print de resultado de aluno 2",
+      "imageUrl": "https://ibb.co/Q7PyNxyd",
+      "imageHint": "mobile screenshot"
     },
     {
       "id": "student-result-3",
-      "description": "Print de resultado de aluno 3 - Saldo bancário de vendas",
-      "imageUrl": "https://picsum.photos/seed/banco1/400/800",
-      "imageHint": "bank statement"
+      "description": "Print de resultado de aluno 3",
+      "imageUrl": "https://ibb.co/GfNpvmBN",
+      "imageHint": "mobile screenshot"
     }
   ]
 }
