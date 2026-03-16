@@ -26,7 +26,7 @@ export function Pricing() {
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <div className="glass-card rounded-[2.5rem] overflow-hidden border-primary/40 relative shadow-[0_0_60px_rgba(34,197,94,0.15)]">
+          <div className="glass-card rounded-[2.5rem] overflow-hidden border-primary/40 relative shadow-[0_0_60px_rgba(24,119,242,0.15)]">
             <div className="absolute top-0 right-0 p-8">
               <Sparkles className="w-12 h-12 text-accent animate-pulse" />
             </div>
@@ -68,7 +68,7 @@ export function Pricing() {
                 </Button>
 
                 <div className="flex items-center gap-4 text-[10px] text-muted-foreground uppercase font-bold tracking-widest">
-                  <span className="flex items-center gap-1.5"><ShieldCheck className="w-4 h-4 text-green-500" /> Compra Segura</span>
+                  <span className="flex items-center gap-1.5"><ShieldCheck className="w-4 h-4 text-primary" /> Compra Segura</span>
                   <span className="flex items-center gap-1.5"><Zap className="w-4 h-4 text-yellow-500" /> Vagas Limitadas</span>
                 </div>
               </div>

@@ -8,7 +8,7 @@ export function Guarantee() {
       <div className="container mx-auto px-4 max-w-4xl">
         <div className="flex flex-col md:flex-row items-center gap-12 glass-card p-10 md:p-16 rounded-[3rem] border-primary/20">
           <div className="relative shrink-0">
-            <div className="w-32 h-32 md:w-48 md:h-48 bg-primary/20 rounded-full flex items-center justify-center border-4 border-primary shadow-[0_0_40px_rgba(34,197,94,0.3)]">
+            <div className="w-32 h-32 md:w-48 md:h-48 bg-primary/20 rounded-full flex items-center justify-center border-4 border-primary shadow-[0_0_40px_rgba(24,119,242,0.3)]">
               <span className="text-4xl md:text-6xl font-headline font-extrabold text-primary">7</span>
               <span className="text-xs md:text-sm font-bold absolute bottom-4 md:bottom-8 uppercase">Dias</span>
             </div>
