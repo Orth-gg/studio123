@@ -3,7 +3,7 @@ import type {Metadata} from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Lucro Express - Domine o Facebook Marketplace',
+  title: 'Renda Express - Domine o Facebook Marketplace',
   description: 'Descubra como criar uma renda extra ou principal vendendo no Facebook Marketplace com o guia exclusivo Marketplace Renda Express.',
 };
 

@@ -16,7 +16,7 @@ type Message = {
 export function Chatbot() {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([
-    { role: "assistant", content: "Olá! Sou o assistente Lucro Express. Tem alguma dúvida sobre como dominar o Facebook Marketplace? Pergunte-me qualquer coisa!" }
+    { role: "assistant", content: "Olá! Sou o assistente Renda Express. Tem alguma dúvida sobre como dominar o Facebook Marketplace? Pergunte-me qualquer coisa!" }
   ]);
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
@@ -56,7 +56,7 @@ export function Chatbot() {
                 <Bot className="text-white w-6 h-6" />
               </div>
               <div>
-                <p className="font-bold text-sm text-white">Assistente Lucro Express</p>
+                <p className="font-bold text-sm text-white">Assistente Renda Express</p>
                 <p className="text-[10px] text-white/70 uppercase tracking-widest">Online Agora</p>
               </div>
             </div>

@@ -14,7 +14,7 @@ export function Navbar() {
             <TrendingUp className="w-5 h-5 text-white" />
           </div>
           <span className="font-headline font-bold text-xl tracking-tight">
-            Lucro<span className="text-primary">Express</span>
+            Renda<span className="text-primary">Express</span>
           </span>
         </Link>
 
