@@ -36,6 +36,24 @@
       "description": "Close up of Facebook Marketplace interface on a screen.",
       "imageUrl": "https://picsum.photos/seed/fb/800/500",
       "imageHint": "social marketplace"
+    },
+    {
+      "id": "proof-print-1",
+      "description": "Screenshot of several sales notifications on a mobile phone.",
+      "imageUrl": "https://picsum.photos/seed/venda1/400/700",
+      "imageHint": "mobile notifications"
+    },
+    {
+      "id": "proof-print-2",
+      "description": "Screenshot of a Facebook Marketplace chat full of interested buyers.",
+      "imageUrl": "https://picsum.photos/seed/chat1/400/700",
+      "imageHint": "chat messages"
+    },
+    {
+      "id": "proof-print-3",
+      "description": "Screenshot of a bank app showing a positive balance from sales.",
+      "imageUrl": "https://picsum.photos/seed/banco1/400/700",
+      "imageHint": "bank app"
     }
   ]
 }
