@@ -1,15 +1,11 @@
 
 "use client";
 
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { PlaceHolderImages } from "@/app/lib/placeholder-images";
 import { ArrowRight, ShieldCheck, Zap, TrendingUp } from "lucide-react";
 
 export function Hero() {
-  const heroImage = (PlaceHolderImages || []).find((img) => img.id === "hero-dashboard");
-
   return (
     <section className="pt-32 pb-20 overflow-hidden money-gradient">
       <div className="container mx-auto px-4">
@@ -60,24 +56,31 @@ export function Hero() {
             </div>
           </div>
 
-          <div className="flex-1 relative w-full aspect-square max-w-[550px]">
-            <div className="absolute -inset-4 bg-primary/20 blur-3xl rounded-full" />
-            <div className="relative glass-card rounded-3xl overflow-hidden border-white/20">
-              {heroImage && (
-                <Image
-                  src={heroImage.imageUrl}
-                  alt={heroImage.description}
-                  width={600}
-                  height={600}
-                  className="object-cover"
-                  data-ai-hint={heroImage.imageHint}
-                />
-              )}
-            </div>
-            <div className="absolute -bottom-6 -left-6 glass-card p-6 rounded-2xl border-primary/30 animate-bounce-slow">
-              <p className="text-xs text-muted-foreground font-bold uppercase">Resultado Real</p>
-              <p className="text-2xl font-headline font-extrabold text-primary">R$ 350,00</p>
-              <p className="text-[10px] text-muted-foreground uppercase">Lucro no primeiro dia</p>
+          <div className="flex-1 relative w-full flex justify-center lg:justify-end">
+            <div className="relative group">
+              <div className="absolute -inset-10 bg-primary/20 blur-[100px] rounded-full animate-pulse" />
+              <div className="relative flex flex-col items-center justify-center space-y-4 glass-card p-12 md:p-20 rounded-[3rem] border-primary/30 shadow-[0_0_50px_rgba(24,119,242,0.2)] hover:scale-105 transition-transform duration-500">
+                <div className="bg-primary p-6 rounded-[2rem] shadow-xl shadow-primary/20">
+                  <TrendingUp className="w-16 h-16 md:w-24 md:h-24 text-white" />
+                </div>
+                <div className="text-center">
+                  <h2 className="text-4xl md:text-6xl font-headline font-black tracking-tighter">
+                    RENDA<span className="text-primary">EXPRESS</span>
+                  </h2>
+                  <p className="text-xs md:text-sm font-bold text-muted-foreground uppercase tracking-[0.3em] mt-2">
+                    DOMINE O MARKETPLACE
+                  </p>
+                </div>
+              </div>
+              
+              <div className="absolute -bottom-6 -left-6 glass-card p-4 rounded-2xl border-primary/30 animate-bounce-slow">
+                <p className="text-[10px] text-muted-foreground font-bold uppercase">Meta Batida</p>
+                <p className="text-xl font-headline font-extrabold text-primary">R$ 450,00</p>
+              </div>
+              <div className="absolute -top-6 -right-6 glass-card p-4 rounded-2xl border-accent/30 animate-pulse">
+                <p className="text-[10px] text-muted-foreground font-bold uppercase">Vendas Hoje</p>
+                <p className="text-xl font-headline font-extrabold text-accent">+12</p>
+              </div>
             </div>
           </div>
         </div>
