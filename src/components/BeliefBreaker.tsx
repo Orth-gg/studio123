@@ -1,37 +1,40 @@
+
 "use client";
 
 import { AlertCircle } from "lucide-react";
 
 export function BeliefBreaker() {
   return (
-    <section className="py-24 bg-secondary/50">
+    <section className="py-20 bg-secondary/50">
       <div className="container mx-auto px-4 max-w-4xl text-center">
-        <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-destructive/10 text-destructive mb-8">
-          <AlertCircle className="w-8 h-8" />
+        <div className="inline-flex items-center justify-center w-14 h-14 md:w-16 md:h-16 rounded-full bg-destructive/10 text-destructive mb-6 md:mb-8">
+          <AlertCircle className="w-7 h-7 md:w-8 md:h-8" />
         </div>
-        <h2 className="text-3xl md:text-5xl font-headline font-bold mb-8 uppercase">
-          A verdade que ninguém te conta sobre ganhar dinheiro online
+        <h2 className="text-2xl md:text-5xl font-headline font-black mb-6 md:mb-8 uppercase leading-tight text-balance">
+          A verdade sobre ganhar dinheiro online
         </h2>
-        <div className="space-y-6 text-lg md:text-xl text-muted-foreground leading-relaxed text-left glass-card p-8 md:p-12 rounded-3xl">
+        <div className="space-y-6 text-base md:text-xl text-muted-foreground leading-relaxed text-left glass-card p-6 md:p-12 rounded-[2rem] md:rounded-[3rem]">
           <p>
             Muitas pessoas acreditam que ganhar dinheiro online exige investimentos altos, conhecimento técnico ou sorte.
           </p>
           <p className="font-bold text-foreground">
-            Mas existe um lugar dentro da internet onde milhões de pessoas compram e vendem todos os dias.
+            Mas existe um lugar onde milhões de pessoas compram e vendem todos os dias, sem gastar um centavo em anúncios.
           </p>
-          <p className="text-primary font-bold text-2xl md:text-3xl font-headline">
+          <p className="text-primary font-black text-2xl md:text-4xl font-headline leading-tight py-2">
             Esse lugar é o Facebook Marketplace.
           </p>
-          <p>
+          <p className="text-sm md:text-lg">
             O problema é que a maioria das pessoas usa ele da forma errada:
           </p>
-          <ul className="grid sm:grid-cols-3 gap-4 text-center">
-            <li className="bg-white/5 p-4 rounded-xl border border-white/10 font-bold uppercase text-sm">Sem estratégia</li>
-            <li className="bg-white/5 p-4 rounded-xl border border-white/10 font-bold uppercase text-sm">Sem método</li>
-            <li className="bg-white/5 p-4 rounded-xl border border-white/10 font-bold uppercase text-sm">Sem saber vender</li>
-          </ul>
-          <p className="text-center pt-8 text-xl">
-            E é exatamente por isso que criamos o <span className="text-primary font-bold">Renda Express Marketplace</span>.
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
+            {["Sem estratégia", "Sem método", "Sem saber vender"].map((txt, i) => (
+              <div key={i} className="bg-white/5 p-4 rounded-xl border border-white/10 font-black uppercase text-[10px] md:text-xs text-center tracking-widest text-foreground">
+                {txt}
+              </div>
+            ))}
+          </div>
+          <p className="text-center pt-8 text-lg md:text-2xl">
+            E é por isso que o <span className="text-primary font-black">Renda Express</span> é a sua melhor chance hoje.
           </p>
         </div>
       </div>
